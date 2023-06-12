@@ -3,7 +3,7 @@ fn main() {
     let num = 42;
     let immutable_s = &num;
 
-    // 2 可变借用
+    // 2 可变借用，两个变量都会同时修改
     let mut num = 42;
     let mutable_s = &mut num;
 
@@ -20,5 +20,5 @@ fn main() {
 
     arr_ptr[2] = "Java";
 
-    println!("{:?}", arr_ptr) // ["Rust", "Go", "Java"]
+    println!("{:?}", arr_ptr); // ["Rust", "Go", "Java"]
 }
